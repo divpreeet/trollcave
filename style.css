@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  background-image: url(https://hc-cdn.hel1.your-objectstorage.com/s/v3/109f7bbd26f927a1f298aaef33383003147f8857_idle-face.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  justify-content: center;
+  text-align: center;
+}
+
+.lore {
+  margin-top: 2em;
+  padding: 2em 2em 1em 2em;
+  max-width: 500px;
+  background: linear-gradient(123deg, #f5e6b1 90%, #dfc685 100%);
+  border-radius: 36px;
+  box-shadow: 0 8px 36px rgba(0,0,0,0.5), 0 0 0 12px #e4c47b inset;
+  color: #282415;
+  font-size: 1.1em;
+  font-family: "Bangers", sans-serif;
+  line-height: 1.4;
+  text-align: center;
+  position: relative;
+}
+
+h1, h6{
+  color: #fff;
+  margin: 1px 0;
+}
+
+.header {
+  font-family: "Bangers", sans-serif;
+  font-size: 22px;
+}
+
+
+.rickroll {
+  position: fixed;
+  top: 50%;
+  left: -250px;
+  transform: translateY(-50%);
+  display: none;
+  z-index: 100;
+}
+
+.rickroll.animate {
+  display: block;
+  animation: roll 5s linear forwards;
+}
+
+.rickroll img {
+  width: 600px;
+  max-width: 90vw;
+  border-radius: 14px;
+}
+
+@keyframes roll {
+  from {
+    left: -250px;
+  }
+  to {
+    left: calc(100vw + 20px);
+  }
+}
